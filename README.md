@@ -1,46 +1,52 @@
-# Roadmap Generator
+# Visual Roadmap Generator
 
-## 概要 - Overview
+プロジェクトのロードマップを視覚的に生成・管理するためのツールです。
 
-見やすいロードマップをPowerPointで作成するのが面倒だったので、NextJSで作成しました。
-タスクの開始日と終了日を入力すると、ロードマップを生成します。
+## 機能
 
-I created this service because it was difficult to create a roadmap in PowerPoint.
-The task start date and end date are entered, and the roadmap is generated.
+- タスクの作成・編集・削除
+- ドラッグ＆ドロップでのタスク移動
+- タイムラインのズーム機能
+- 画像としてエクスポート
+- ローカルストレージでのデータ保存
 
-## 使用方法 - Usage
+## 開発環境のセットアップ
 
-1. タスクの開始日と終了日を入力します。
-2. ロードマップを生成します。
+```bash
+# 依存パッケージのインストール
+npm install
 
-1. Enter the task start date and end date.
-2. Generate the roadmap.
+# 開発サーバーの起動
+npm run dev
+```
 
-## ロードマップの保存 - Save the roadmap
+## ビルドと実行
 
-ロードマップを画像で保存できます。
-右上の「画像として保存」をクリックしてください。
+```bash
+# プロダクションビルド
+npm run build
 
-You can save the roadmap as an image.
-Click "Save as image" in the upper right corner.
+# プロダクションサーバーの起動
+npm run start
+```
 
-### ロードマップの保存先 - How to save the roadmap
+## GitHub Pagesへのデプロイ
 
-ロードマップはブラウザのローカルストレージに保存されます。
-ブラウザを閉じてもロードマップは保存されています。
-本サービスでは一切のデータを保存していません。
+このプロジェクトはGitHub Actionsを使用して自動的にGitHub Pagesにデプロイされます。
 
-The roadmap is saved in the browser's local storage.
-The roadmap is saved even if the browser is closed.
-This service does not save any data.
+1. リポジトリの「Settings」タブを開く
+2. 「Pages」セクションに移動
+3. 「Build and deployment」セクションで以下を設定：
+   - Source: GitHub Actions
+4. mainブランチにプッシュすると自動的にデプロイが開始されます
 
-## ライセンス - License
+デプロイされたアプリケーションは以下のURLで確認できます：
+https://[username].github.io/visual-roadmap/
 
-MIT
+## 技術スタック
 
-## Contribution
-
-ご意見、ご要望、バグ報告などありましたら、[GitHub Issues](https://github.com/tomodakengo/visual-roadmap/issues)までお願いします。
-
-Welcome to contribute to this project.
-When you have any suggestions, requests, or bug reports, please contact us via [GitHub Issues](https://github.com/tomodakengo/visual-roadmap/issues).
+- Next.js
+- TypeScript
+- Tailwind CSS
+- DnD Kit
+- html-to-image
