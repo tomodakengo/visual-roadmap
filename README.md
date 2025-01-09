@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Roadmap Generator
 
-## Getting Started
+## 概要 - Overview
 
-First, run the development server:
+見やすいロードマップをPowerPointで作成するのが面倒だったので、NextJSで作成しました。
+タスクの開始日と終了日を入力すると、ロードマップを生成します。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I created this service because it was difficult to create a roadmap in PowerPoint.
+The task start date and end date are entered, and the roadmap is generated.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 使用方法 - Usage
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. タスクの開始日と終了日を入力します。
+2. ロードマップを生成します。
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. Enter the task start date and end date.
+2. Generate the roadmap.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## ロードマップの保存 - Save the roadmap
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ロードマップを画像で保存できます。
+右上の「画像として保存」をクリックしてください。
 
-## Learn More
+You can save the roadmap as an image.
+Click "Save as image" in the upper right corner.
 
-To learn more about Next.js, take a look at the following resources:
+### ロードマップの保存先 - How to save the roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+ロードマップはブラウザのローカルストレージに保存されます。
+ブラウザを閉じてもロードマップは保存されています。
+本サービスでは一切のデータを保存していません。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The roadmap is saved in the browser's local storage.
+The roadmap is saved even if the browser is closed.
+This service does not save any data.
 
-## Deploy on Vercel
+## ライセンス - License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Contribution
+
+ご意見、ご要望、バグ報告などありましたら、[GitHub Issues](https://github.com/tomodakengo/visual-roadmap/issues)までお願いします。
+
+Welcome to contribute to this project.
+When you have any suggestions, requests, or bug reports, please contact us via [GitHub Issues](https://github.com/tomodakengo/visual-roadmap/issues).
