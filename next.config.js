@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/visual-roadmap',
-  assetPrefix: '/visual-roadmap/',
+  basePath: process.env.GITHUB_ACTIONS ? '/visual-roadmap' : '',
+  assetPrefix: process.env.GITHUB_ACTIONS ? '/visual-roadmap/' : '',
 }
 
 module.exports = nextConfig 
