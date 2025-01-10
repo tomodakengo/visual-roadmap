@@ -40,8 +40,8 @@ npm run start
    - Source: GitHub Actions
 4. mainブランチにプッシュすると自動的にデプロイが開始されます
 
-デプロイされたアプリケーションは以下のURLで確認できます：
-https://[username].github.io/visual-roadmap/
+デプロイされたアプリケーションは以下のURLで確認できます：<br>
+[https://[username].github.io/visual-roadmap/](https://tomodakengo.github.io/visual-roadmap/)
 
 ## 技術スタック
 
